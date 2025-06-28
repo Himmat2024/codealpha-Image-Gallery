@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Himmat Photography</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Himmat Photography</h1>
+    <div class="profile" style="display: flex; align-items: flex-start; gap: 20px;">
+      <img src="./Profile.png" alt="Himmat Hekmatullah" class="profile-pic" />
+      <div class="profile-info" style="text-align: left;">
+   <h2>Himmat Hekmatullah</h2>
+<p>
+  I’m Himmat, a passionate photographer inspired by the wonders of nature 🌿📸. 
+  I wander through landscapes and wild places, seeking moments that take the breath away 🌄🦌. 
+  My camera captures the delicate beauty of animals and the grandeur of the natural world 🐾🌍. 
+  Every photo tells a story — a glimpse into a world often unseen ✨📷. 
+  Through my lens, I invite you to experience the magic of nature’s silent moments 🌟🍃.
+  <br><br>
+  👉 Visit my YouTube: 
+  <a href="https://www.youtube.com/@Switzerland.2024" target="_blank">
+    @Switzerland.2024
+  </a>
+</p>
+
+
+    <input type="text" id="search" placeholder="Search by title..." />
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="nature">Nature</button>
+      <button data-filter="city">City</button>
+      <button data-filter="wildlife">Wildlife</button>
+    </div>
+  </header>
+
+  <main class="gallery">
+    <!-- 20 images below -->
+    <div class="image-card nature" data-title="Mountain View">
+      <img src="https://picsum.photos/id/1018/600/400" alt="Mountain View" />
+      <p>Mountain View</p>
+    </div>
+    <div class="image-card city" data-title="Urban Night">
+      <img src="https://picsum.photos/id/1011/600/400" alt="Urban Night" />
+      <p>Urban Night</p>
+    </div>
+    <div class="image-card wildlife" data-title="Tiger in Forest">
+      <img src="https://picsum.photos/id/1025/600/400" alt="Tiger in Forest" />
+      <p>Tiger in Forest</p>
+    </div>
+    <div class="image-card nature" data-title="Lake Reflection">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Lake Reflection" />
+      <p>Lake Reflection</p>
+    </div>
+    <div class="image-card city" data-title="Skyscraper View">
+      <img src="https://picsum.photos/id/1003/600/400" alt="Skyscraper View" />
+      <p>Skyscraper View</p>
+    </div>
+    <div class="image-card wildlife" data-title="Eagle Eye">
+      <img src="https://picsum.photos/id/1024/600/400" alt="Eagle Eye" />
+      <p>Eagle Eye</p>
+    </div>
+    <div class="image-card nature" data-title="Desert Trail">
+      <img src="https://picsum.photos/id/1002/600/400" alt="Desert Trail" />
+      <p>Desert Trail</p>
+    </div>
+    <div class="image-card city" data-title="Old Town">
+      <img src="https://picsum.photos/id/1031/600/400" alt="Old Town" />
+      <p>Old Town</p>
+    </div>
+    <div class="image-card wildlife" data-title="Fox in Snow">
+      <img src="https://picsum.photos/id/1062/600/400" alt="Fox in Snow" />
+      <p>Fox in Snow</p>
+    </div>
+    <div class="image-card nature" data-title="Waterfall Beauty">
+      <img src="https://picsum.photos/id/1043/600/400" alt="Waterfall Beauty" />
+      <p>Waterfall Beauty</p>
+    </div>
+    <div class="image-card city" data-title="Bridge at Sunset">
+      <img src="https://picsum.photos/id/1047/600/400" alt="Bridge at Sunset" />
+      <p>Bridge at Sunset</p>
+    </div>
+    <div class="image-card nature" data-title="Sunrise Glow">
+      <img src="https://picsum.photos/id/1056/600/400" alt="Sunrise Glow" />
+      <p>Sunrise Glow</p>
+    </div>
+    <div class="image-card wildlife" data-title="Elephant March">
+      <img src="https://picsum.photos/id/1063/600/400" alt="Elephant March" />
+      <p>Elephant March</p>
+    </div>
+    <div class="image-card city" data-title="Night Lights">
+      <img src="https://picsum.photos/id/1037/600/400" alt="Night Lights" />
+      <p>Night Lights</p>
+    </div>
+    <div class="image-card nature" data-title="Rocky Hills">
+      <img src="https://picsum.photos/id/1038/600/400" alt="Rocky Hills" />
+      <p>Rocky Hills</p>
+    </div>
+    <div class="image-card city" data-title="Busy Street">
+      <img src="https://picsum.photos/id/1050/600/400" alt="Busy Street" />
+      <p>Busy Street</p>
+    </div>
+    <div class="image-card wildlife" data-title="Deer in Mist">
+      <img src="https://picsum.photos/id/1060/600/400" alt="Deer in Mist" />
+      <p>Deer in Mist</p>
+    </div>
+    <div class="image-card nature" data-title="Frozen Lake">
+      <img src="https://picsum.photos/id/1070/600/400" alt="Frozen Lake" />
+      <p>Frozen Lake</p>
+    </div>
+    <div class="image-card wildlife" data-title="Bear Roaming">
+      <img src="https://picsum.photos/id/1084/600/400" alt="Bear Roaming" />
+      <p>Bear Roaming</p>
+    </div>
+    <div class="image-card city" data-title="City Rain">
+      <img src="https://picsum.photos/id/1049/600/400" alt="City Rain" />
+      <p>City Rain</p>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <p class="caption"></p>
+    <div class="controls">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
